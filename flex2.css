@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+}
+
+/* Profile card styles */
+.profile-card {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #fff;
+}
+
+.profile-header {
+    background-image: url("./assests/IMG-20240302-WA0016_1.jpg");
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover;
+    object-fit: cover;
+    height: 200px;
+    text-align: center;
+    /* padding: 20px; */
+    background-color: #4a90e2;
+    color: #fff;
+}
+img {
+    background-position: center;
+    background-size: cover;
+}
+
+.profile-pic {
+    width: 100%;
+    height: auto;
+    object-fit: auto;
+    /* border-radius: 70%; */
+    object-fit: cover;
+    /* border: 5px solid #fff; */
+    margin-top: 50px;
+}
+
+.name {
+    font-size: 24px;
+    margin: 10px 0 5px;
+}
+
+.title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.profile-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.bio {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.social-link {
+    text-decoration: none;
+    color: #4a90e2;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+/* media queries starts here */
+@media only screen and ( max-width: 399px) { 
+    body {
+        background-color: rgb(129, 12, 207);
+    }
+    .profile-footer {
+        display: none;
+    }
+}
+@media only screen and ( min-width: 400px) { 
+    body {
+        background-color: red;
+    }
+}
+@media only screen and ( min-width: 600px) { 
+    body {
+        background-color: rgb(132, 226, 9);
+    }
+    .profile-card {
+        width: 70%;
+        height: 70%;
+    }
+}
+
+@media only screen and ( width: 670px) { 
+    body {
+        background-color: rgb(27, 218, 218);
+    }
+}
+
+
+
